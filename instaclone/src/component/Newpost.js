@@ -5,7 +5,7 @@ import "./newpost.css"
 import {Link} from "react-router-dom"
 
 const Newpost=()=>{
-    const [file,setfile]=useState("")
+
     const [name,setname]=useState("")
     const [location,setlocation]=useState("")
     const [description,setdescription]=useState("")
@@ -29,14 +29,14 @@ return(
    
     <div className="home" >
         <div className="navbar1">
-            <img  className="img2"src={icon}/>
+            <img  className="img2"src={icon} alt=" of "/>
             <h1 className="h1">Instaclone</h1>
-         <Link to="/viewpost" ><img  className="img1"src={camera}/></Link> 
+         <Link to="/viewpost" ><img  className="img1"src={camera}alt=" of"/></Link> 
 
         </div>
         <div className="inputfield">
 <div className="innerinput">
-<input  className="input"type="file"  /><br/>  <br/>
+<br/>  <br/>
 <input type="text" placeholder="Author" onChange={(e)=>{setname(e.target.value)}}/><br/><br/>
 <input type="text" placeholder="Location" onChange={(e)=>{setlocation(e.target.value)}}/> <br/><br/>
 <input type="text" placeholder="Description" onChange={(e)=>{setdescription(e.target.value)}}/> <br/><br/>
