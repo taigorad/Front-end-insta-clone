@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom"
-import homeimage from "../image/lens-1418954.png"
+import homeimage from "../image/lence.png"
 import "./home.css"
 const Home=()=>{
    return (<div className="container">
